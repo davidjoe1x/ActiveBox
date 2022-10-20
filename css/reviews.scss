@@ -1,0 +1,68 @@
+.reviews{
+    margin: 100px 0;
+    position: relative;
+
+
+
+    &_item {
+        display: flex;
+    }
+
+    &_right {
+        width: 50%;
+        height: 490px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #5C3249;
+
+        
+        
+}
+
+&_left {
+    width: 50%;
+    height: 490px;
+}
+
+&_left img 
+{
+    width: 100%;
+}
+&_inner{
+    margin: auto;
+}
+
+
+
+&_title {
+    font-family: 'Cardo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    max-width: 471px;
+    color: #fff;
+    text-transform: capitalize;
+    }
+
+
+
+    &_text {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;
+        color: #fff;
+        text-transform: uppercase;
+        }
+        
+}
+
+
+
+
+
+
+
+
+

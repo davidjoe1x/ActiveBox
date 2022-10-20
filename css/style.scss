@@ -1,0 +1,142 @@
+@import url(header.scss);
+@import url(intro.scss);
+@import url(features.scss);
+@import url(works.scss);
+@import url(team.scss);
+@import url(reviews.scss);
+@import url(swiper-bundle.min.css);
+@import url(download.scss);
+@import url(footer.scss);
+
+@font-face {
+    font-family:'Raleway';
+    src: url(../fonts/Raleway-Regular.woff);
+    font-weight: 400;
+
+}
+
+@font-face {
+    font-family:'Raleway';
+    src: url(../fonts/Raleway-Medium.woff);
+    font-weight: 500;
+
+}
+
+@font-face {
+    font-family:'Raleway';
+    src: url(../fonts/Raleway-Bold.woff);
+    font-weight: 700;
+
+}
+
+@font-face {
+    font-family:'Raleway';
+    src: url(../fonts/Raleway-Black.woff);
+    font-weight: 900;
+
+}
+
+
+
+@font-face {
+    font-family:'Cardo';
+    src: url(../fonts/Cardo-Regular.woff);
+    font-weight: 400;
+
+}
+
+@font-face {
+    font-family:'Poppins';
+    src: url(../fonts/Poppins-Thin.woff);
+    font-weight: 100;
+
+}
+
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: 'Raleway';
+    -webkit-font-smoothing:
+    antialiased;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing:border-box;
+}
+
+/* Btn */ 
+.btn {
+display: inline-block;
+max-width: 369px;
+background: #FF4343; 
+ font-weight: 900;
+ font-size: 14px;
+ line-height: 28px; 
+ border: 0;
+ color: #fff;
+ text-transform: uppercase;
+ padding: 10px 60px;
+ cursor: pointer;
+ transition: background .1s linear;
+
+}
+
+
+.btn--red:hover {
+     background: #E71414;
+}
+
+/* Cards */ 
+
+.card_title {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #2D3033;
+}
+
+.card_text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #6C7279;
+}
+
+.card--title {
+    font-weight: 700!important;
+}
+
+.card--subtitle {
+    text-transform: uppercase;
+    color: #FF4343 !important;
+}
+
+
+.card--text {
+    max-width: 270px;
+}
+
+

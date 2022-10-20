@@ -1,0 +1,52 @@
+.team {
+    margin: 100px 0;
+
+    &_inner{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+    &_item {
+        width: 25%;
+    }
+    
+
+}
+
+.team_social {
+    display: flex;
+    
+    
+    
+}
+
+
+.social_icon {
+    display: block;
+    height: 18px;
+    
+}
+.social_icon:hover {
+    fill: #E71414 ;
+    
+    
+}
+
+.team_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #C6CBCD;
+    margin-right: 4px;
+}
+
+.team_img:hover {
+    background: #C6CBCD;
+    transition:background .2s linear;
+ 
+}
+
+

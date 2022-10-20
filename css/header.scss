@@ -1,0 +1,77 @@
+/*  Header   */ 
+.header{
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100px;
+
+
+ &_inner {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #BABBC5;
+    align-items: center;
+    padding: 35px 0;
+ }
+
+
+
+ &_logo {
+    text-transform: uppercase;
+    color:  #656980;
+    font-weight: 900;
+    font-size: 34px;
+}
+
+
+&_logo span {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+
+  
+}
+
+}
+
+
+
+
+
+
+
+/* Nav */ 
+
+.nav {
+
+&_link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+
+li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+}
+
+
+
+
+
+
+// .nav_link:hover {
+// //     display: block;
+// //     content: "";
+// //     background: #BABBC5;
+// //     height:2px ;
+
+// // }
