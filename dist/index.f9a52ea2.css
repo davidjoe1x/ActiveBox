@@ -42,6 +42,16 @@
   display: inline-block;
 }
 
+@media screen and (max-width: 320px) {
+  .header_inner {
+    border: none;
+  }
+
+  .header_logo {
+    font-size: 22px;
+  }
+}
+
 .intro {
   height: 750px;
   text-align: center;
@@ -58,6 +68,7 @@
 .intro_title {
   color: #fff;
   text-transform: uppercase;
+  margin-bottom: 32px;
   font-size: 64px;
   font-weight: 900;
   line-height: 75px;
@@ -71,6 +82,30 @@
   line-height: 28px;
 }
 
+@media screen and (max-width: 320px) {
+  .intro {
+    padding-top: 120px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .intro_title {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 42px;
+  }
+
+  .intro_subtitle {
+    max-width: 280px;
+    margin: 33px auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+
 .features_inner {
   flex-wrap: wrap;
   justify-content: space-between;
@@ -82,6 +117,10 @@
   max-width: 32%;
   text-align: center;
   margin-bottom: 100px;
+}
+
+.features_item img {
+  margin-bottom: 40px;
 }
 
 .works {
@@ -184,13 +223,13 @@
   display: inline-flex;
 }
 
+.reviews_right_left img {
+  width: 100%;
+}
+
 .reviews_left {
   width: 50%;
   height: 490px;
-}
-
-.reviews_left img {
-  width: 100%;
 }
 
 .reviews_inner {
@@ -201,6 +240,7 @@
   max-width: 471px;
   color: #fff;
   text-transform: capitalize;
+  margin-bottom: 20px;
   font-family: Cardo;
   font-size: 36px;
   font-style: italic;
@@ -869,6 +909,7 @@ button.swiper-pagination-bullet {
 
 .download_title {
   color: #000;
+  margin-bottom: 15px;
   font-size: 30px;
   font-weight: 500;
   line-height: 35px;
@@ -877,6 +918,7 @@ button.swiper-pagination-bullet {
 .download_subtitle {
   text-transform: uppercase;
   color: #000;
+  margin-bottom: 48px;
   font-size: 18px;
   font-weight: 700;
   line-height: 21px;
@@ -900,6 +942,7 @@ button.swiper-pagination-bullet {
 
 .footer_title {
   text-transform: uppercase;
+  margin-bottom: 30px;
   font-size: 18px;
   font-weight: 700;
   line-height: 21px;
@@ -921,6 +964,8 @@ button.swiper-pagination-bullet {
 
 .footer--social {
   justify-content: center;
+  column-gap: 20px;
+  padding-top: 29px;
   display: flex;
 }
 
@@ -976,7 +1021,7 @@ body {
   font-family: Raleway;
 }
 
-h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
@@ -1012,6 +1057,7 @@ h1, h2, h3, h4, h5, h6 {
 .card_title {
   text-transform: uppercase;
   color: #2d3033;
+  margin-bottom: 21px;
   font-size: 24px;
   font-weight: 900;
   line-height: 28px;
@@ -1025,6 +1071,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card--title {
+  margin: 30px 0 6px;
   font-weight: 700 !important;
 }
 
@@ -1035,6 +1082,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .card--text {
   max-width: 270px;
+  margin: 18px 0 38px;
 }
 
 /*# sourceMappingURL=index.f9a52ea2.css.map */

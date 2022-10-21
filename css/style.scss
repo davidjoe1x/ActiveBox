@@ -8,6 +8,7 @@
 @import url(download.scss);
 @import url(footer.scss);
 
+
 @font-face {
     font-family:'Raleway';
     src: url(../fonts/Raleway-Regular.woff);
@@ -58,7 +59,6 @@
 
 
 
-
 body {
     margin: 0;
     font-family: 'Raleway';
@@ -66,6 +66,9 @@ body {
     antialiased;
 }
 
+p {
+    margin: 0;
+}
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -116,6 +119,7 @@ background: #FF4343;
     line-height: 28px;
     text-transform: uppercase;
     color: #2D3033;
+    margin-bottom: 21px;
 }
 
 .card_text{
@@ -127,16 +131,19 @@ background: #FF4343;
 
 .card--title {
     font-weight: 700!important;
+    margin: 30px 0 6px 0;
 }
 
 .card--subtitle {
     text-transform: uppercase;
     color: #FF4343 !important;
+ 
 }
 
 
 .card--text {
     max-width: 270px;
+    margin: 18px 0 38px 0;
 }
 
 

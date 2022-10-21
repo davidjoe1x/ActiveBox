@@ -16,6 +16,10 @@
         justify-content: center;
         background-color: #5C3249;
 
+        &_left img {
+            width: 100%;
+        }
+
         
         
 }
@@ -23,11 +27,6 @@
 &_left {
     width: 50%;
     height: 490px;
-}
-
-&_left img 
-{
-    width: 100%;
 }
 &_inner{
     margin: auto;
@@ -44,6 +43,7 @@
     max-width: 471px;
     color: #fff;
     text-transform: capitalize;
+    margin-bottom: 20px;
     }
 
 
