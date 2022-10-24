@@ -1,22 +1,24 @@
+@import 'style.scss';
+
+
 /* Features */ 
 .features {
 
-&_inner {
-    display: flex;
-    flex-wrap: wrap;
+&-inner {
+    @include flex;
     justify-content: space-between;
     margin-top: 100px;
 }
 
 
-&_item {
+&-item {
     max-width: 32%;
     text-align: center;
     margin-bottom: 100px;
     
    }
 
-   &_item img {
+   &-item img {
     margin-bottom: 40px;
    }
 
@@ -24,3 +26,34 @@
 
 
 /* Media */ 
+@media screen and (max-width: 320px) {
+
+.features {
+
+   &-item {
+      max-width: 100%;
+      padding: 0 10px;
+      
+  
+  
+     }
+
+
+
+
+     &-inner {
+      margin-top: 50px;
+     }
+
+
+     &-item img {
+      width: 76px;
+     }
+  
+  
+}
+
+}
+
+
+

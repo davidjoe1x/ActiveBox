@@ -9,7 +9,7 @@
     text-align: center;
 
 
-    &_inner {
+    &-inner {
         width: 100%;
         margin: 0 auto;
         text-align: center;
@@ -27,7 +27,6 @@
 
 
     &_subtitle {
-        color: #fff;
         font-weight: 400;
         font-size: 24px;
         line-height: 28px;
@@ -44,33 +43,40 @@
 @media screen and (max-width: 320px) {
 
  .intro{
-        padding-top: 120px;
+        padding-top: 106px;
+        height: 574px;
+
+
+
+        &-inner {
+            max-width: 280px;
+            
+            
+        }
+
+
+        &_title {
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 42px;
+            
+                }
+
+
+                &_subtitle {
+           
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin: 33px auto;
+                    padding: 0 6px;
+                
+                        }
     
-    }
-    
-.nav {
-        display: none;
-    }
-    
-.intro_title {
-font-weight: 900;
-font-size: 36px;
-line-height: 42px;
-
-    }
-
-  
-
-.intro_subtitle {
-font-weight: 400;
-font-size: 14px;
-line-height: 16px;
-max-width: 280px;
-margin: 33px auto;
-
     }
 
 
 }
     
+
 

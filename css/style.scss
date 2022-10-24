@@ -4,9 +4,10 @@
 @import url(works.scss);
 @import url(team.scss);
 @import url(reviews.scss);
-@import url(swiper-bundle.min.css);
+@import url(swiper-bundle.min.scss);
 @import url(download.scss);
 @import url(footer.scss);
+@import url(burger.scss);
 
 
 @font-face {
@@ -55,7 +56,10 @@
 
 
 
-
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 
@@ -64,6 +68,7 @@ body {
     font-family: 'Raleway';
     -webkit-font-smoothing:
     antialiased;
+    color: #fff;
 }
 
 p {
@@ -89,11 +94,19 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing:border-box;
 }
 
+:root {
+	--color-grey: #6C7279;
+	
+
+}
+
+
 /* Btn */ 
-.btn {
+.button{
 display: inline-block;
 max-width: 369px;
 background: #FF4343; 
+font-family: 'Raleway';
  font-weight: 900;
  font-size: 14px;
  line-height: 28px; 
@@ -104,16 +117,45 @@ background: #FF4343;
  cursor: pointer;
  transition: background .1s linear;
 
+
+
+&:hover {
+    background: #E71414;
+}
+
+&:active {
+    background: #FF4343;
+    box-shadow: 4px 4px 30px #FF4343;
 }
 
 
-.btn--red:hover {
-     background: #E71414;
+
 }
+
+@media screen and (max-width: 320px) {  
+
+
+.button {
+width: 100%;
+font-weight: 900;
+font-size: 24px;
+line-height: 28px;
+padding: 15px 0;
+    }
+
+.button_button--download {
+    padding: 30px 0;
+}
+
+}
+
+
+
 
 /* Cards */ 
 
-.card_title {
+.card {
+&-title {
     font-weight: 900;
     font-size: 24px;
     line-height: 28px;
@@ -122,28 +164,48 @@ background: #FF4343;
     margin-bottom: 21px;
 }
 
-.card_text{
+
+&-text{
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #6C7279;
+    color: var(--color-grey);
 }
 
-.card--title {
+
+&--title {
     font-weight: 700!important;
     margin: 30px 0 6px 0;
+   text-transform: capitalize;
+    
 }
 
-.card--subtitle {
+
+&--subtitle {
     text-transform: uppercase;
     color: #FF4343 !important;
  
+
 }
 
-
-.card--text {
+&--text {
     max-width: 270px;
     margin: 18px 0 38px 0;
 }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 

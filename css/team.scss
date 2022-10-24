@@ -1,39 +1,47 @@
+@import 'style.scss';
+
 .team {
     margin: 100px 0;
 
-    &_inner{
-        display: flex;
-        flex-wrap: wrap;
+    &-inner{
+        @include flex;
+
+ 
+     
         
     }
     
-    &_item {
-        width: 25%;
+    &-item {
+        max-width: 25%;
+        margin: 0 auto;
+        padding: 0 15px;
+      
+
+  
     }
-    
+
 
 }
 
-.team_social {
+
+.social {
     display: flex;
-    
+
+
+    &_icon {
+        display: block;
+        height: 18px;
+        
+    }
+        
+&_icon:hover {
+    fill: #E71414;
     
     
 }
 
 
-.social_icon {
-    display: block;
-    height: 18px;
-    
-}
-.social_icon:hover {
-    fill: #E71414 ;
-    
-    
-}
-
-.team_img {
+&_img{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,11 +50,69 @@
     border: 1px solid #C6CBCD;
     margin-right: 4px;
 }
-
-.team_img:hover {
+    
+&_img:hover {
     background: #C6CBCD;
     transition:background .2s linear;
- 
 }
+
+
+    &--footer{
+        display: flex;
+        justify-content: center;
+        padding-top: 29px;
+        column-gap: 20px;
+    }
+
+
+
+        &_img--footer{
+            fill:#fff;
+        }
+        
+        }
+
+
+        
+        
+
+
+/* Media */ 
+@media screen and (max-width: 320px) {
+
+.team-item {
+
+    max-width: 100%;
+    margin: 35px auto;
+    
+   
+    
+}
+
+}
+
+
+
+@media only screen and (device-width: 1024px) {
+    .team_img {
+        max-width: 228px;
+       
+        
+    }
+
+ 
+
+
+ 
+   
+}
+
+
+
+
+
+
+
+
 
 

@@ -25,5 +25,29 @@ margin: 100px 0;
 }
 
 
+@media screen and (max-width: 320px) {
 
+ .download {
+    max-width: 280px;
+    margin: 70px auto;
+
+&_title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    
+    
+}
+
+
+&_subtitle {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+  
+
+}
+    }
+
+}
 

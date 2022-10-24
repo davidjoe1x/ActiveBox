@@ -1,20 +1,20 @@
+@import 'style.scss';
+
 /* Footer */ 
 
 .footer{
     
     background-color:#353C65 ;
 
-    &_inner {
-        display: flex;
-        flex-wrap: wrap;
+    &-inner {
+        @include flex;
         padding: 70px 0;
        
     }
 
-    &_item {
+    &-item {
         width: 33%;
         text-align: center;
-        color: #fff;
        
     }
 
@@ -28,20 +28,27 @@
         }
 
 
-    &_copyright {
+    &-copyright {
             background-color:#2C3154;
             padding: 20px 0;
            
         }
 
 
-        &_text {
+        &_desc {
             text-transform: capitalize;
             padding: 0 30px;
         }
 
+        &_desc--copy {
+            text-align: center;
+            margin: auto;
+            color: #808080;
+        }
+        
 
-        &_text span {
+
+        &_desc span {
             color: #fff;
         }
         
@@ -50,34 +57,28 @@
 
 
 
+@media screen and (max-width: 320px) {
 
 
+    .footer {
 
-.footer--social {
-    display: flex;
-    justify-content: center;
-    padding-top: 29px;
-    column-gap: 20px;
-   
-    
-}
-
-.icon--footer {
-    fill:#fff;
-
-}
+        &-item {
+            width: 100%;
+            padding-bottom: 70px;
+        }
 
 
+        &-item:last-child {
+            padding-bottom: 0;
+        }
 
 
+        &_desc {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            }
 
+    }
 
-
-.footer--copyright {
-    text-align: center;
-    margin: auto;
-    color: #808080;
-}
-
-
-
+ }
